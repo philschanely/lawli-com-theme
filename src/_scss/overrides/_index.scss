@@ -1,15 +1,6 @@
 ///
 // Overrides of original theme go here
 ///
-body {
-  margin: 50px auto;
-  padding: 50px;
-  width: 600px;
-  color: grey;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  border: 2px solid grey;
-  border-radius: 3px;
+.header-text {
+  display: none;
 }
