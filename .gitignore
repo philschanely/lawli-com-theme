@@ -1,0 +1,10 @@
+node_modules
+.idea
+*.iml
+lib
+.ftpconfig
+getnoticed
+src/app.js
+src/style.css
+src/style.css.map
+lawli-com-theme

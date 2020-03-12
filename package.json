@@ -1,0 +1,47 @@
+{
+  "name": "lawli-com-theme",
+  "version": "1.2.1",
+  "description": "WP Theme for Life As We Live It",
+  "main": "index.php",
+  "scripts": {
+    "build:assets": "cpx 'src/**/*.{png,jpg,svg}' lawli-com-theme --update",
+    "build:babel": "babel src/_js -d lib",
+    "build:bundle": "browserify lib -o lawli-com-theme/app.js",
+    "build:sass": "node-sass --include-path='src/_scss' src/_scss/index.scss lawli-com-theme/style.css",
+    "build:wptheme": "cpx 'src/_theme/**/*.*' lawli-com-theme --update",
+    "dev:babel": "babel src/_js -d lib",
+    "dev:bundle": "browserify lib -o src/app.js",
+    "dev:sass": "node-sass --include-path='src/_scss' --source-map=true src/_scss/index.scss src/style.css",
+    "watch:babel": "babel src/_js -d lib -w",
+    "watch:bundle": "watchify lib/index.js -o src/app.js",
+    "watch:sass": "node-sass -w --include-path='src/_scss' --source-map=true src/_scss/index.scss src/style.css",
+    "sync:browser": "browser-sync start -s \"src\" -f \"src/**/*.*\"",
+    "prestart": "npm-run-all dev:*",
+    "start": "npm-run-all -p sync:* watch:*",
+    "prebuild": "rm -rf lawli-com-theme",
+    "build": "npm-run-all build:*",
+    "stage": "npm-run-all dev:*"
+  },
+  "author": "Phil Schanely",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philschanely/schanely-photography/issues"
+  },
+  "homepage": "https://github.com/philschanely/schanely-photography#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.3",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^11.1.1",
+    "stylelint-config-narwin": "^2.1.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-scss": "^3.12.1",
+    "cpx": "^1.5.0",
+    "watchify": "^3.11.1"
+  }
+}

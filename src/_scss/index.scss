@@ -1,0 +1,19 @@
+/*
+ Theme Name: LAWLI Custom v1.0
+ Theme URI: http://github.com/schanelystudios/lawli-com-theme
+ Author: Phil Schanely
+ Author URI: http://philschanely.com
+ Template: getnoticed
+ Description: Custom theme for Life As We Live It as a child them of `getnoticed`
+ Version: 1.0
+ Tags:
+ */
+
+// Configs
+@import "vars";
+
+// Custom components
+@import "components/index";
+
+// Override styles
+@import "overrides/index";

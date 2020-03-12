@@ -1,0 +1,13 @@
+.git
+getnoticed
+lib
+node_modules
+src
+.babelrc
+.ftpconfig
+.ftpignore
+.gitignore
+.stylelintrc
+package-lock.json
+package.json
+README.md
