@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/036cb21b-dbea-485b-a688-172820af3276/deploy-status)](https://app.netlify.com/sites/lawli-com-staging/deploys)
 
-WordPress Theme for [LifeAsWeLiveIt.com](http://schanelyphotography.com).
+WordPress Theme for [LifeAsWeLiveIt.com](http://LifeAsWeLiveIt.com).
 
 Visit the [staging site](https://lawli-com-staging.netlify.com/)
 
