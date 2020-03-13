@@ -4,9 +4,38 @@
   }
 
   .getnoticed-mainnav {
-    margin-top: 73px;
+    margin-top: 45px;
     position: relative;
     top: initial;
     right: initial;
+
+    @media (min-width: 961px) {
+      margin-top: 85px;
+    }
   }
+
+  #headernav .social {
+    top: 0;
+
+    @media (min-width: 961px) {
+      top: -14px;
+    }
+  }
+}
+
+.mobile-title a {
+  padding-top: 90px;
+  width: 200px;
+  background-image: url("/images/wordmark.svg");
+  background-size: contain;
+}
+
+.site-navigation .mobile_actions {
+  @media (max-width: 800px) {
+    margin-top: -14px;
+  }
+}
+
+#primary-menu li a {
+  padding: 0 10px;
 }
