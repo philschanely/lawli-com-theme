@@ -1,0 +1,20 @@
+.sharebar {
+  background: $color-base-200;
+
+  .button {
+    color: $color-base;
+    background: transparent;
+    border: 1px solid $color-base-300;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.button,
+.nav-next a,
+.nav-previous a {
+  color: $color-white;
+  text-shadow: none;
+  border: none;
+  background: $color-base-200;
+}

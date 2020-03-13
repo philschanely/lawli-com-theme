@@ -1,0 +1,15 @@
+
+// Output a full typespec setting
+@mixin type-spec($spec) {
+  $spec-match: map-get($type-specs, $spec);
+
+  @if ($spec-match) {
+    font-family: map-get($spec-match, font);
+    font-size: map-get($spec-match, size);
+    font-style: map-get($spec-match, style);
+    font-weight: map-get($spec-match, weight);
+    line-height: map-get($spec-match, leading);
+    letter-spacing: map-get($spec-match, kerning);
+    text-transform: map-get($spec-match, transform);
+  }
+}

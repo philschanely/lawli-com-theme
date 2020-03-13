@@ -1,0 +1,43 @@
+.hentry,
+.post-type-archive .page-header,
+.author .author-info,
+#comments,
+#comments-policy,
+#disqus_thread,
+#fbSEOComments,
+#livefyre-comments {
+  border: none;
+}
+
+.category .page-header,
+.hentry,
+.post-type-archive .page-header {
+  margin-bottom: 6rem;
+}
+
+#top_search #s {
+  box-shadow: none;
+  border-radius: 2px;
+  border: 1px solid $color-base-300;
+}
+
+.sidebar .widget {
+  color: $color-base;
+  box-shadow: 0 2px 4px $color-base-200;
+  border-radius: 2px;
+
+  h3 {
+    background-color: $color-primary;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+}
+
+div.sidebar .widget_getnoticed_subscribe {
+  padding: 0;
+  background: none;
+}
+
+.widget {
+  margin-bottom: 40px;
+}

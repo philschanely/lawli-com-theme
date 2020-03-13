@@ -1,6 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,300i,600,600i|Montserrat:500,500i,600,600i&display=swap");
+
 ///
-// Overrides of original theme go here
+// Specific modules
 ///
+@import "type";
+@import "masthead";
+@import "blocks";
+@import "buttons";
+
+
+///
+// Misc overrides of original theme go here
+///
+
+// Extra text in masthead
 .header-text {
   display: none;
+}
+
+// Hyperlinks
+a,
+a:visited {
+  color: $color-accent;
 }
