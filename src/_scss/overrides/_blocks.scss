@@ -1,6 +1,18 @@
+///
+// Block overrides
+///
+
+// What if ad page
+.page-id-421 {
+  .entry-header {
+    display: none;
+  }
+}
+
+// Misc
 .authorbox {
-  border: none;
   padding: 12px 8px;
+  border: none;
 }
 
 .author .author-info,
