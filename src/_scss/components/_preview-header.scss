@@ -1,0 +1,39 @@
+.preview-header {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: $color-base;
+
+  h2 {
+    margin: 0;
+    padding: 5px;
+    color: $color-primary;
+
+    @include type-spec(h6);
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  li {
+    list-style: none;
+
+    @include type-spec(h6);
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  a,
+  a:visited {
+    padding: 5px;
+    display: block;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
