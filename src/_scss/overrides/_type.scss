@@ -2,6 +2,10 @@ html {
   font-size: 10px;
 }
 
+.t-lead {
+  @include type-spec(lead);
+}
+
 .authorbox {
   @include type-spec(body);
 
