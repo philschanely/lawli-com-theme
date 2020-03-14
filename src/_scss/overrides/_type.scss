@@ -2,11 +2,25 @@ html {
   font-size: 10px;
 }
 
+.authorbox {
+  @include type-spec(body);
+
+  h3.authorbox-name {
+    @include type-spec(h5);
+  }
+}
+
 .site-header .site-title,
 .page h1,
 .post h1,
 .page-header h1 {
-  @include type-spec(h2);
+  @media (max-width: 689px) {
+    @include type-spec(h4);
+  }
+
+  @media (min-width: 690px) {
+    @include type-spec(h2);
+  }
 }
 
 .entry-header .entry-meta,
@@ -20,6 +34,8 @@ html {
 
 .hentry .entry-header h3.getnoticed-entry-subtitle {
   @include type-spec(h5);
+
+  margin-top: 6px;
 }
 
 #main,

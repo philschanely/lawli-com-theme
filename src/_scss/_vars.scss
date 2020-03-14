@@ -34,7 +34,7 @@ $type-specs: (
   h3: (
     font: $font-display,
     size: $size-display-2,
-    leading: $leading-3x,
+    leading: $leading-2x,
     weight: $weight-display-semi,
     kerning: 3px,
     transform: uppercase,
@@ -43,7 +43,7 @@ $type-specs: (
   h4: (
     font: $font-display,
     size: $size-display-2,
-    leading: $leading-3x,
+    leading: $leading-2x,
     weight: $weight-display-med,
     kerning: 2px,
     transform: none,
@@ -101,6 +101,7 @@ $color-white: #fff;
 $color-primary: #8fc52a;
 $color-secondary: #e7a365;
 $color-accent: #667ece;
+$color-danger: #d35159;
 $color-base-800: #2d2d2d;
 $color-base-700: #565656;
 $color-base-600: #6f6f6f;
