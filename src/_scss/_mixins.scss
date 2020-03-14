@@ -7,7 +7,7 @@
     font-family: map-get($spec-match, font);
     font-size: map-get($spec-match, size);
     font-style: map-get($spec-match, style);
-    font-weight: map-get($spec-match, weight);
+    font-weight: map-get($spec-match, weight); /* stylelint-disable-line */
     line-height: map-get($spec-match, leading);
     letter-spacing: map-get($spec-match, kerning);
     text-transform: map-get($spec-match, transform);

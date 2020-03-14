@@ -6,11 +6,11 @@
   background-color: $color-base;
 
   h2 {
+    @include type-spec(h6);
+
     margin: 0;
     padding: 5px;
     color: $color-primary;
-
-    @include type-spec(h6);
   }
 
   ul {
@@ -20,9 +20,9 @@
   }
 
   li {
-    list-style: none;
-
     @include type-spec(h6);
+
+    list-style: none;
 
     &:not(:last-child) {
       margin-right: 20px;
